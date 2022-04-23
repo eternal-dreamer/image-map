@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>ImageMap</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js"></script>
+
+</head>
+
+<body>
+    <h1>HARRY POTTER</h1>
+    <p>Harry Potter is a film series based on the eponymous novels by J. K. Rowling. The series is distributed by Warner
+        Bros. and consists of eight fantasy films, beginning with Harry Potter and the Philosopher's Stone (2001) and
+        culminating with Harry Potter and the Deathly Hallows – Part 2 (2011).[2][3] A spin-off prequel series that is
+        planned to consist of five films started with Fantastic Beasts and Where to Find Them (2016), marking the beginning
+        of the Wizarding World shared media franchise.</p>
+    <div>
+        <h2>Click on any character's face!</h2>
+        <img src="imgs/poster1.jpg" usemap="#names" height="350px" />
+
+        <map name="names">
+        <area shape="circle" coords="140,56,40" href="harry.html" target="_blank" onclick="show('Harry Potter')" />
+        
+        <area shape="circle" coords="79,80,31" href="hermione.html" target="_blank" onclick="show('Hermione Granger')" />
+
+        <area shape="circle" coords="30,90,21" href="ron.html" target="_blank" onclick="show('Ron Weasley')" />
+
+    
+    </map>
+        <h2>You chose: </h2>
+        <form name="characters">
+            <input type="text" name="res" size="25px" />
+        </form>
+    </div>
+</body>
+
+</html>
